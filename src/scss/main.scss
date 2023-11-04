@@ -313,7 +313,8 @@
     }
     footer {
         .footer-nav {
-            display: flex;
+            display: grid;
+            grid-template-columns: repeat(5, auto);
             justify-content: space-between;
             border-bottom: 1px solid gray;
             padding-bottom: 20px;
@@ -378,5 +379,7 @@
         }
     }
 }
-
+.for-phone {
+    display: none;
+}
 @import './adaptive'

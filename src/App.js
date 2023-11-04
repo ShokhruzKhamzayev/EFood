@@ -8,6 +8,7 @@ import Subscription from "./pages/Subscription";
 import Footer from "./pages/Footer";
 import './css/style.css'
 
+
 function App() {
   return (
     <div className="App">

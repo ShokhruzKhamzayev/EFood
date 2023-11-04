@@ -13,7 +13,6 @@ import burger_five from '../assets/fifth-br.png'
 import { Pagination, Navigation, Autoplay } from 'swiper/modules';
 
 
-
 export default function Category() {
     
     return (
