@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+body {
+  background: whitesmoke;
+  color: #363853;
+}
+body a {
+  text-decoration: none;
+  color: #363853;
+}
+body ul {
+  list-style: none;
+}
+body button {
+  background-color: transparent;
+  border: 0px;
+  color: #363853;
+}
+body input {
+  outline: none;
+}
+body .flex-align-center {
+  display: flex;
+  align-items: center;
+}
+body .header-section h1 {
+  font-size: 36px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+body .header-section h1 span {
+  color: #FF7A50;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0px auto;
+}
+
+.container header {
+  justify-content: space-between;
+  padding: 20px 0px 0px 0px;
+}
+.container header h1 {
+  font-size: 33px;
+  font-weight: 500;
+  letter-spacing: 1.65px;
+}
+.container header h1::first-letter {
+  color: #FF7A50;
+}
+.container header .nav-and-btns {
+  gap: 60px;
+}
+.container header .nav-and-btns nav ul {
+  gap: 60px;
+}
+.container header .nav-and-btns nav ul a {
+  font-size: 18px;
+}
+.container header .nav-and-btns .btns-menu {
+  gap: 60px;
+}
+.container header .nav-and-btns .btns-menu button {
+  width: 120px;
+  height: 50px;
+  background-color: #FF7A50;
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: 0px 22px 40px 0px rgba(255, 104, 56, 0.19);
+}
+.container main {
+  margin-top: 60px;
+}
+.container main h1 {
+  font-size: 66px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.container main h1 span {
+  color: #FF7A50;
+}
+.container main p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: capitalize;
+  max-width: 513px;
+  margin-top: 23px;
+}
+.container main .btns-main {
+  display: flex;
+  gap: 30px;
+  margin-top: 40px;
+}
+.container main .btns-main a {
+  font-size: 20px;
+  border-radius: 5px;
+  padding: 13px 21px;
+}
+.container main .btns-main a:first-of-type {
+  color: white;
+  background-color: #FF7A50;
+  box-shadow: 0px 22px 40px 0px rgba(255, 104, 56, 0.19);
+}
+.container main .btns-main a:nth-child(2) {
+  color: #363853;
+  font-size: 20px;
+  text-decoration-line: underline;
+  background-color: transparent;
+  box-shadow: 0px;
+}
+.container .category-section .category-menu {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 30px 0px;
+}
+.container .category-section .category-menu button {
+  width: 210px;
+  height: 70px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  background-color: white;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: 400;
+}
+.container .category-section .category-menu button:first-child {
+  background-color: #FF7A50;
+}
+.container .category-section .swipe-mode {
+  padding-bottom: 30px;
+}
+.container .category-section .swiper {
+  padding-bottom: 10px;
+}
+.container .category-section .swiper-slide {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  height: 279px;
+  text-align: center;
+  border-radius: 12px;
+  background: #FFF;
+}
+.container .category-section .swiper-slide .burger-type {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+.container .category-section .swiper-slide .burger-type p {
+  font-size: 15px;
+  font-weight: 400;
+}
+.container .category-section .swiper-slide .burger-type span {
+  font-size: 15px;
+  font-weight: 500;
+}
+.container .category-section .swiper-slide .burger-type button {
+  display: block;
+  margin: 13px auto;
+  color: #FFF;
+  font-size: 15px;
+  border-radius: 2px;
+  background: var(--Secondary, #FF7A50);
+  padding: 7px 13px;
+}
+
+/*# sourceMappingURL=style.css.map */

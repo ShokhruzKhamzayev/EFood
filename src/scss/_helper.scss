@@ -1,0 +1,57 @@
+@use './variables' as var;
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap');
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+body {
+    background: whitesmoke;
+    color: var.$textMainColor;
+    a {
+        text-decoration: none;
+        color: var.$textMainColor;
+    }
+    ul {
+        list-style: none;
+    }
+    button {
+        background-color: transparent;
+        border: 0px;
+        color: var.$textMainColor;
+    }
+    input {
+       outline: none; 
+    }
+    .flex-align-center {
+        display: flex;
+        align-items: center;
+    }
+    .header-section {
+        h1 {
+            font-size: 36px;
+            font-weight: 500;
+            text-transform: capitalize;
+            span {
+                color: var.$textSecolndaryColor;
+            }
+        }
+    }
+}
+.container {
+    max-width: 1440px;
+    margin: 0px auto;
+}
