@@ -1,6 +1,11 @@
 import Home from "./pages/Home";
 import Category from "./pages/Category";
 import Delivery from "./pages/Delivery";
+import Manual from "./pages/Manual";
+import Dowload from "./pages/Dowload";
+import Comment from "./pages/Comment";
+import Subscription from "./pages/Subscription";
+import Footer from "./pages/Footer";
 import './css/style.css'
 
 function App() {
@@ -10,6 +15,11 @@ function App() {
         <Home/>
         <Category/>
         <Delivery/>
+        <Manual/>
+        <Dowload/>
+        <Comment/>
+        <Subscription/>
+        <Footer/>
       </div>
     </div>
   );

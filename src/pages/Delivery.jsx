@@ -11,7 +11,7 @@ export default function Delivery() {
                 <div className="header-section">
                     <h1><span>Stay</span> at home, we will Provide <span>good food</span></h1>
                 </div>
-                <p>We provide tasty food and superfast delivery at your home.  Let’s use our services right now and get discounts of up to 50%.</p>
+                <p className='starter-del'>We provide tasty food and superfast delivery at your home.  Let’s use our services right now and get discounts of up to 50%.</p>
                 <div className="listed-menu">
                     <div className="menu-list">
                         <div className="img-menu">

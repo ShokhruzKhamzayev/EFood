@@ -34,7 +34,8 @@ body {
         color: var.$textMainColor;
     }
     input {
-       outline: none; 
+        border: 0px;
+        outline: none; 
     }
     .flex-align-center {
         display: flex;
