@@ -318,6 +318,18 @@
             border-bottom: 1px solid gray;
             padding-bottom: 20px;
             margin-top: 100px;
+            .links-footer {
+                margin-top: 20px;
+                gap: 20px;
+                svg {
+                    fill: #EEEEEF;
+                    background-color: var.$textMainColor;
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    padding: 5px;
+                }
+            }
             h2 {
                 font-size: 33px;
                 font-weight: 500;
