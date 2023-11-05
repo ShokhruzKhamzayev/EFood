@@ -23,7 +23,7 @@ export default function Manual() {
     }, [])
 
     return (
-        <div className='manual-section' ref={el}>
+        <div className='manual-section' ref={el} id='cities'>
             <div className="header-section">
                 <h1>Top Food <span>restaurant</span></h1>
             </div>

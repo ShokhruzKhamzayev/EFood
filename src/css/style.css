@@ -13,6 +13,7 @@
 
 html, body {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -157,6 +158,7 @@ body footer {
 }
 .container .category-section .category-menu button:first-child {
   background-color: #FF7A50;
+  color: white;
 }
 .container .category-section .swipe-mode {
   padding-bottom: 30px;
@@ -429,6 +431,55 @@ body footer {
 
 .for-phone {
   display: none;
+}
+
+header .logo h1 {
+  transition: all 0.4s ease;
+}
+header .logo h1:hover {
+  transform: scale(1.2);
+}
+header button, header svg {
+  transition: all 0.4s ease;
+}
+header button:hover, header svg:hover {
+  transform: translateY(-5px);
+}
+
+main a {
+  transition: all 0.4s ease;
+}
+main a:hover {
+  transform: scale(1.2);
+}
+
+.category-menu button {
+  transition: all 0.4s ease;
+}
+.category-menu button:hover {
+  color: white;
+  background-color: #FF7A50 !important;
+}
+
+header ul a, footer ul a {
+  position: relative;
+  transition: all 0.4s ease;
+}
+header ul a::after, footer ul a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  width: 0%;
+  left: 0;
+  height: 3px;
+  background-color: #FF7A50;
+  transition: all 0.4s ease;
+}
+header ul a:hover::after, footer ul a:hover::after {
+  width: 100%;
+}
+header ul a:hover, footer ul a:hover {
+  color: #FF7A50;
 }
 
 @media screen and (max-width: 768px) {

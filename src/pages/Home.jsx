@@ -20,18 +20,18 @@ export default function Home() {
     }, [])
    
   return (
-    <div className='home' ref={el}>
+    <div className='home' ref={el} id='home'>
         <header className='flex-align-center'>
             <div className="logo">
-                <h1>EFood</h1>
+                <a href="./Home.jsx"><h1>EFood</h1></a>
             </div>
             <div className="nav-and-btns flex-align-center">
                 <nav className='for-pc' >
                       <ul className='flex-align-center'>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Service</a></li>
-                        <li><a href="#">Top Cities</a></li>
-                        <li><a href="#">Contract</a></li>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#service">Service</a></li>
+                        <li><a href="#cities">Top Cities</a></li>
+                        <li><a href="#contract">Contract</a></li>
                     </ul>
                 </nav>
                 <div className="btns-menu flex-align-center">

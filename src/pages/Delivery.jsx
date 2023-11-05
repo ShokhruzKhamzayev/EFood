@@ -23,7 +23,7 @@ export default function Delivery() {
         }, el.current)
     }, [])
     return (
-        <div className='delivery-section flex-align-center'>
+        <div className='delivery-section flex-align-center' id='service'>
             <div className="left-delivery">
                 <img src={delivery_content} alt="content delivery" />
             </div>

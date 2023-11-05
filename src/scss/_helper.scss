@@ -14,47 +14,58 @@
     font-family: 'Rubik', sans-serif;
 }
 
-html, body {
+html,
+body {
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 body {
     background: whitesmoke;
     color: var.$textMainColor;
+
     a {
         text-decoration: none;
         color: var.$textMainColor;
     }
+
     ul {
         list-style: none;
     }
+
     button {
         background-color: transparent;
         border: 0px;
         color: var.$textMainColor;
     }
+
     input {
         border: 0px;
-        outline: none; 
+        outline: none;
     }
+
     .flex-align-center {
         display: flex;
         align-items: center;
     }
+
     .header-section {
         h1 {
             font-size: 36px;
             font-weight: 500;
             text-transform: capitalize;
+
             span {
                 color: var.$textSecolndaryColor;
             }
         }
     }
+
     footer {
         overflow-y: hidden;
     }
 }
+
 .container {
     max-width: 1440px;
     margin: 0px auto;

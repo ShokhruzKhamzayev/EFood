@@ -16,7 +16,7 @@ export default function Footer() {
         })
     }, [])
     return (
-        <footer ref={el}>
+        <footer ref={el} id='contract'>
             <div className="footer-nav">
                 <div className="list-footer">
                     <h2>EFood</h2>

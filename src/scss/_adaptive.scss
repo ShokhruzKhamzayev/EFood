@@ -1,76 +1,130 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @media screen and (max-width: 768px) {
     .container {
         max-width: 90%;
     }
+
     .for-pc {
         display: none;
     }
+
     .flex-align-center {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
         text-align: center;
     }
+
     .home {
         header {
+            -webkit-box-orient: horizontal !important;
+            -webkit-box-direction: normal !important;
+            -ms-flex-direction: row !important;
             flex-direction: row !important;
+
             .flex-align-center {
+                -webkit-box-orient: horizontal !important;
+                -webkit-box-direction: normal !important;
+                -ms-flex-direction: row !important;
                 flex-direction: row !important;
             }
         }
+
         main {
-            h1, p {
+
+            h1,
+            p {
                 max-width: 100%;
             }
+
             h1 {
                 font-size: 40px;
             }
+
             img {
                 max-width: 400px;
             }
+
             .btns-main {
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
                 justify-content: center;
             }
         }
     }
+
     .main-section {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
         flex-direction: column-reverse;
     }
+
     .category-menu {
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
         row-gap: 30px;
     }
+
     .delivery-section {
         img {
             width: 400px;
-        }        
+        }
     }
+
     .manual-list {
         grid-template-columns: repeat((2, auto)) !important;
         gap: 30px;
+
         img {
             max-width: 100%;
         }
     }
+
     .left-dowload {
         .flex-align-center {
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: row;
             flex-direction: row;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
             justify-content: center;
             margin-bottom: 50px;
         }
     }
+
     .img-commentor {
         display: none !important;
     }
+
     .comment-item {
         margin-right: 50px;
     }
+
     label {
         .flex-align-center {
+            -webkit-box-orient: horizontal !important;
+            -webkit-box-direction: normal !important;
+            -ms-flex-direction: row !important;
             flex-direction: row !important;
         }
     }
-    footer .flex-align-center{
+
+    footer .flex-align-center {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
         flex-direction: row;
     }
+
     .footer-nav {
         grid-template-columns: repeat(3, auto) !important;
     }
@@ -80,49 +134,67 @@
     .for-phone {
         display: block;
     }
+
     .manual-list {
         grid-template-columns: repeat(1, auto) !important;
     }
+
     body img {
         max-width: 100%;
     }
+
     .menu-list p {
         font-size: 20px !important;
     }
+
     .comment-item p {
         font-size: 19px !important;
     }
+
     .till-tablet {
         display: none !important;
     }
+
     .subscription-section {
         h1 {
             font-size: 28px !important;
         }
+
         p {
             font-size: 15px !important;
         }
-        label  {
+
+        label {
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
             flex-direction: column;
             height: 100% !important;
-            padding:10px 0 !important;
+            padding: 10px 0 !important;
             border-radius: 3px !important;
             margin-top: 30px;
+
             button {
                 max-width: 100px;
                 max-height: 50px;
                 font-size: 14px !important;
                 margin-top: 20px;
             }
-        }   
-    }
-    .footer-nav {
-        grid-template-columns: repeat(2, auto) !important;
-        a {
-            font-size: 14px !important; 
         }
     }
+
+    .footer-nav {
+        grid-template-columns: repeat(2, auto) !important;
+
+        a {
+            font-size: 14px !important;
+        }
+    }
+
     .bottom-footer {
+        -webkit-box-orient: vertical !important;
+        -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
         flex-direction: column !important;
         row-gap: 30px;
     }
