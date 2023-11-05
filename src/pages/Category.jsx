@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useRef, useEffect} from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'swiper/css';
@@ -12,9 +12,8 @@ import burger_five from '../assets/fifth-br.png'
 
 import { Pagination, Navigation, Autoplay } from 'swiper/modules';
 
-
 export default function Category() {
-    
+
     return (
         <div className='category-section'>
             <div className="header-section">

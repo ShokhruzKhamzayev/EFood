@@ -1,19 +1,31 @@
-import React from 'react'
+import React, { useLayoutEffect, useRef } from 'react'
 import '../css/style.css'
 import main_content from '../assets/Scooter Guy.png'
 
+import gsap from 'gsap'
+
 
 export default function Home() {
-
+    const tl = useRef(), 
+        el = useRef()
+    useLayoutEffect(() => {
+        const ctx = gsap.context(() => {
+            tl.current =
+                gsap.timeline()
+                .from('header', { y: -200, duration: 1, ease: 'back' })
+                .from('header li', { x: -200, duration: 1, ease: 'back', opacity: 0, stagger: .3 })
+        }, el)
+    }, [])
+   
   return (
-    <div className='home'>
+    <div className='home' ref={el}>
         <header className='flex-align-center'>
             <div className="logo">
                 <h1>EFood</h1>
             </div>
             <div className="nav-and-btns flex-align-center">
-                <nav className='for-pc'>
-                    <ul className='flex-align-center'>
+                <nav className='for-pc' >
+                      <ul className='flex-align-center'>
                         <li><a href="#">Home</a></li>
                         <li><a href="#">Service</a></li>
                         <li><a href="#">Top Cities</a></li>
