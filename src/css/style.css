@@ -11,7 +11,8 @@
   font-family: "Rubik", sans-serif;
 }
 
-html, body {
+html,
+body {
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
@@ -400,7 +401,8 @@ body footer {
   gap: 10px;
   margin-top: 20px;
 }
-.container footer .footer-nav .list-footer h3, .container footer .footer-nav .list-footer a {
+.container footer .footer-nav .list-footer h3,
+.container footer .footer-nav .list-footer a {
   font-size: 18px;
   line-height: 49px;
   letter-spacing: 0.18px;
@@ -439,10 +441,12 @@ header .logo h1 {
 header .logo h1:hover {
   transform: scale(1.2);
 }
-header button, header svg {
+header button,
+header svg {
   transition: all 0.4s ease;
 }
-header button:hover, header svg:hover {
+header button:hover,
+header svg:hover {
   transform: translateY(-5px);
 }
 
@@ -461,11 +465,13 @@ main a:hover {
   background-color: #FF7A50 !important;
 }
 
-header ul a, footer ul a {
+header ul a,
+footer ul a {
   position: relative;
   transition: all 0.4s ease;
 }
-header ul a::after, footer ul a::after {
+header ul a::after,
+footer ul a::after {
   content: "";
   position: absolute;
   bottom: -5px;
@@ -475,13 +481,21 @@ header ul a::after, footer ul a::after {
   background-color: #FF7A50;
   transition: all 0.4s ease;
 }
-header ul a:hover::after, footer ul a:hover::after {
+header ul a:hover::after,
+footer ul a:hover::after {
   width: 100%;
 }
-header ul a:hover, footer ul a:hover {
+header ul a:hover,
+footer ul a:hover {
   color: #FF7A50;
 }
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
 @media screen and (max-width: 768px) {
   .container {
     max-width: 90%;
@@ -490,16 +504,26 @@ header ul a:hover, footer ul a:hover {
     display: none;
   }
   .flex-align-center {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     text-align: center;
   }
   .home header {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+    -ms-flex-direction: row !important;
     flex-direction: row !important;
   }
   .home header .flex-align-center {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+    -ms-flex-direction: row !important;
     flex-direction: row !important;
   }
-  .home main h1, .home main p {
+  .home main h1,
+  .home main p {
     max-width: 100%;
   }
   .home main h1 {
@@ -509,12 +533,18 @@ header ul a:hover, footer ul a:hover {
     max-width: 400px;
   }
   .home main .btns-main {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
   }
   .main-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
     flex-direction: column-reverse;
   }
   .category-menu {
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     row-gap: 30px;
   }
@@ -529,7 +559,12 @@ header ul a:hover, footer ul a:hover {
     max-width: 100%;
   }
   .left-dowload .flex-align-center {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     margin-bottom: 50px;
   }
@@ -540,9 +575,15 @@ header ul a:hover, footer ul a:hover {
     margin-right: 50px;
   }
   label .flex-align-center {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+    -ms-flex-direction: row !important;
     flex-direction: row !important;
   }
   footer .flex-align-center {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
   }
   .footer-nav {
@@ -575,6 +616,9 @@ header ul a:hover, footer ul a:hover {
     font-size: 15px !important;
   }
   .subscription-section label {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     height: 100% !important;
     padding: 10px 0 !important;
@@ -594,6 +638,9 @@ header ul a:hover, footer ul a:hover {
     font-size: 14px !important;
   }
   .bottom-footer {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+    -ms-flex-direction: column !important;
     flex-direction: column !important;
     row-gap: 30px;
   }
