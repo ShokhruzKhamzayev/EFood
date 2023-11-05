@@ -47,6 +47,9 @@ body .header-section h1 {
 body .header-section h1 span {
   color: #FF7A50;
 }
+body footer {
+  overflow-y: hidden;
+}
 
 .container {
   max-width: 1440px;

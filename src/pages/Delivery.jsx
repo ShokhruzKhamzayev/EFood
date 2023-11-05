@@ -1,7 +1,27 @@
-import React from 'react'
+import React, { useLayoutEffect, useRef } from 'react'
 import delivery_content from '../assets/delivery-content.png'
 
+import gsap from 'gsap'
+import ScrollTrigger from 'gsap/ScrollTrigger'
+
+gsap.registerPlugin(ScrollTrigger)
 export default function Delivery() {
+    const el = useRef()
+
+    useLayoutEffect(() => {
+        const ctx = gsap.context(() => {
+            gsap.from('.left-delivery', {x: -300, opacity: 0, duration: .9, ease: 'power1', scrollTrigger: {
+                trigger: '.left-delivery',
+                start: 'top 50%'
+            }})
+            gsap.from('.right-delivery', {
+                x: 300, opacity: 0, duration: .9, ease: 'power1', scrollTrigger: {
+                    trigger: '.right-delivery',
+                    start: 'top 35%'
+                }
+            })
+        }, el.current)
+    }, [])
     return (
         <div className='delivery-section flex-align-center'>
             <div className="left-delivery">

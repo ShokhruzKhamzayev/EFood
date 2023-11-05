@@ -1,8 +1,22 @@
-import React from 'react'
+import React, { useLayoutEffect, useRef } from 'react'
+import gsap from 'gsap'
+
+import ScrollTrigger from 'gsap/ScrollTrigger'
+gsap.registerPlugin(ScrollTrigger)
 
 export default function Footer() {
+    const el = useRef()
+
+    useLayoutEffect(() => {
+        const ctx = gsap.context(() => {
+            gsap.from(el.current, {y: -200, opacity: 0, duration: 1, ease: 'power1', scrollTrigger: {
+                trigger: '.footer-nav',
+                start: 'top center'
+            }})
+        })
+    }, [])
     return (
-        <footer>
+        <footer ref={el}>
             <div className="footer-nav">
                 <div className="list-footer">
                     <h2>EFood</h2>

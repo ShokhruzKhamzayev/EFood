@@ -1,8 +1,21 @@
-import React from 'react'
+import React, { useLayoutEffect, useRef } from 'react'
+import gsap from 'gsap'
 
+import ScrollTrigger from 'gsap/ScrollTrigger'
+gsap.registerPlugin(ScrollTrigger)
 export default function Subscription() {
+  const el = useRef()
+
+  useLayoutEffect(() => {
+    const ctx = gsap.context(() => {
+      gsap.from(el.current, {y: -300, opacity: 0, duration: 1, ease: 'power1', scrollTrigger: {
+        trigger: '.starter-subscription',
+        start: 'top center'
+      }})
+    }, el.current)
+  }, [])
   return (
-    <div className='subscription-section'>
+    <div className='subscription-section' ref={el}>
         <div className="starter-subscription">
               <h1>Subscribe to get the Latest Offer</h1>
               <p>Get our daily updates by subscribing to our newspaper, please drop your email below</p>

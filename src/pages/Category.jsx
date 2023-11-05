@@ -1,5 +1,6 @@
-import React, {useRef, useEffect} from 'react'
+import React, { useLayoutEffect, useRef } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
+import gsap from 'gsap';
 
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -10,12 +11,39 @@ import burger_three from '../assets/third-br.png'
 import burger_four from '../assets/fourth-br.png'
 import burger_five from '../assets/fifth-br.png'
 
+
 import { Pagination, Navigation, Autoplay } from 'swiper/modules';
+import ScrollTrigger from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger)
 
 export default function Category() {
+    const el = useRef()
 
+    useLayoutEffect(() => {
+        const ctx = gsap.context(() => {
+            gsap.from('.header-section', {
+                y: -200, duration: .5, opacity: 0, scrollTrigger: {
+                    trigger: '.header-section',
+                    start: 'top 60%'
+                }
+            })
+            gsap.from('.category-menu', {
+                y: 200, duration: .5, opacity: 0, scrollTrigger: {
+                    trigger: '.category-menu',
+                    start: 'top 90%'
+                }
+            })
+            gsap.from('.swipe-mode', {
+                x: 200, duration: .5, opacity: 0, scrollTrigger: {
+                    trigger: '.swipe-mode',
+                    start: 'top 50%'
+                }
+            })
+        }, el.current)
+    }, [])
     return (
-        <div className='category-section'>
+        <div className='category-section' ref={el}>
             <div className="header-section">
                 <h1>Our popular <span>Category</span></h1>
             </div>
@@ -119,7 +147,7 @@ export default function Category() {
                     Set Menu
                 </button>
             </div>
-                        
+
             <div className='swipe-mode'>
                 <Swiper
                     slidesPerView={1}

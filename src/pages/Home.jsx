@@ -12,9 +12,11 @@ export default function Home() {
         const ctx = gsap.context(() => {
             tl.current =
                 gsap.timeline()
-                .from('header', { y: -200, duration: 1, ease: 'back' })
-                .from('header li', { x: -200, duration: 1, ease: 'back', opacity: 0, stagger: .3 })
-        }, el)
+                .from('header', { y: -200, duration: .7, ease: 'back' })
+                .from('header li', { x: -200, ease: 'back', opacity: 0, stagger: .2 })
+                .from('.right-main', { x: 200, duration: .5, ease: 'back', opacity: 0, ease: 'back' })
+                .from('.left-main', { x: -200, duration: .5, ease: 'back', opacity: 0, ease: 'elastic'})
+        }, el.current)
     }, [])
    
   return (

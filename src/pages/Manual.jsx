@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useLayoutEffect, useRef } from 'react'
 import manual_first from '../assets/manual-first.png'
 import manual_second from '../assets/manual-second.png'
 import manual_third from '../assets/manual-third.png'
@@ -6,9 +6,24 @@ import manual_fourth from '../assets/manual-fourth.png'
 import manual_fifth from '../assets/manual-fifth.png'
 import manual_sixth from '../assets/manual-sixth.png'
 
+import gsap from 'gsap'
+import ScrollTrigger from 'gsap/ScrollTrigger'
+
+gsap.registerPlugin(ScrollTrigger)
+
 export default function Manual() {
+    const el = useRef()
+    useLayoutEffect(() => {
+        const ctx = gsap.context(() => {
+            gsap.from('.manual-item', {x: 300, opacity:0, stagger: .3, scrollTrigger: {
+                trigger: '.manual-item',
+                start: 'top 50%'
+            }})
+        }, el.current)
+    }, [])
+
     return (
-        <div className='manual-section'>
+        <div className='manual-section' ref={el}>
             <div className="header-section">
                 <h1>Top Food <span>restaurant</span></h1>
             </div>
